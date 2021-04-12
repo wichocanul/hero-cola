@@ -1,0 +1,703 @@
+@font-face {
+    font-family: "titulo";
+    src: url("../fonts/SweetTalk.otf");
+}
+@font-face {
+    font-family: "subtitle";
+    src: url("../fonts/Folks-Normal.ttf");
+}
+@font-face {
+    font-family: "normal";
+    src: url("../fonts/Folks-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    overflow-x: hidden;     /* Quita el scroll en caso de pasarse de pantalla */
+}
+
+header{
+    height: 750px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.content{
+    margin: auto;
+}
+
+.header-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.header-video video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay{
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #000000; */
+    background: radial-gradient(#00000073, #000000b2);
+    /* opacity: .76; */
+    z-index: 1;
+}
+
+.container{
+    z-index: 2;
+}
+
+/* ===============================
+INICIO MENU
+================================ */
+
+.cont-nav{
+    height: 70px;
+    border-bottom: 1px solid #fff;
+}
+
+nav .logo p{
+    color: #fff;
+    font-family: "titulo";
+    font-size: 4em;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+.cont-nav ul{
+    height: 70px;
+    text-align: end;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 ;
+    line-height: 70px;
+}
+
+nav .nav-links li a{
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s all ease-out;
+}
+
+nav .nav-links li a.active,a:hover{
+    background: #0111149b;
+    text-decoration: none;
+    color: rgb(0, 255, 242);
+}
+
+/* ======== FIN MENU  ========= */
+
+/* ===============================
+INICIO MENU RESPONSIVE 
+================================ */
+.cont-nav input{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    display: none;
+}
+
+/* ======== FIN MENU RESPONSIVE ========= */
+
+/* ===============================
+TEXTO DEL HEADER
+================================ */
+.header-content{
+    width: 100%;
+    height: auto;
+}
+
+.header-content h1{
+    font-size: 90px;
+    color: #ffffff;
+    font-family: "titulo";
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content p{
+    width:  60%;
+    margin: 50px auto 50px auto;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-family: "normal";
+}
+
+.header-content .logo{
+    width: 100%;
+    display: flex;
+}
+
+.header-content .logo img{
+    width: 200px;
+    margin: 0 auto;
+}
+/* ======== FIN MENU RESPONSIVE ========= */
+
+
+
+/* ==========================================================
+INICIO DE LA SECCION DE BIENVENIDA
+============================================================= */
+section{
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+}
+
+.bienvenidos{
+    width: 100%;
+    min-height: 300px;
+    max-height: auto;
+    margin: 80px auto;
+    background: #000000;
+    color: #fff;
+    padding: 20px;
+}
+
+.bienvenidos .image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bienvenidos .image img{
+    width: 100%;
+    height: auto;
+}
+
+.bienvenidos .contenedor{
+    width: 100%;
+    background: #000000;
+    padding: 30px 25px;
+}
+
+.bienvenidos .contenedor h2{
+    font-family: "titulo";
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.bienvenidos .contenedor p{
+    font-family: "normal";
+    font-size: 1em;
+    color: #d1cccc;
+    margin-bottom: 30px;
+}
+
+
+
+.bienvenidos .mostrar a{
+    background: #000000;
+    border: 2px solid #fff;
+    padding: 9px 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: 1s all ease-out;
+    font-family: "subtitle";
+}
+
+.bienvenidos .mostrar a:hover{
+    background: rgb(0, 255, 242);
+    border: 2px solid #fff;
+    padding: 9px 30px;
+    text-decoration: none;
+    color: #080808;
+}
+/* ======== FIN MENU RESPONSIVE ========= */
+
+
+
+/* ==========================================================
+INICIO DE LA SECCION DE CONTENIDO Y ANIMACION
+============================================================= */
+.cont-anima{
+    width: 100%;
+    height: auto;
+}
+
+section .fiesta{
+    width: 100%;
+    height: auto;
+    background: #FAA026;
+}
+
+section .local{
+    width: 100%;
+    height: auto;
+    background: #00BB83;
+}
+
+.fiesta-text, .local-text{
+    width: 100%;
+    height: 250px;
+    font-family: "subtitle";
+    font-size: 15px;
+    color: #011a1a;
+}
+
+.fiesta-text h4, .local-text h4{
+    font-family: "titulo";
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.fiesta-imag, .local-imag{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    background: #000000;
+}
+
+.fiesta-imag img, .local-imag img{
+    width: 100%;
+    height: auto;
+}
+/* ======== FIN DE CONTENIDO Y ANIMACION ========= */
+
+
+/* ==========================================================
+INICIO DE LA SECCION DE ANIMACION
+============================================================= */
+
+section .cont-carrito{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #5e6666;
+    overflow: hidden;
+}
+
+.cont-carrito .contenedor-1, .cont-carrito .contenedor-2, .edificios{
+    position: absolute;
+}
+
+.cont-carrito .contenedor-1{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #67e0da;
+}
+
+.edificios{
+    /* top: -50px; */
+    width: 1500px;
+    height: 300px;
+    margin-top: 0;
+    background: url(../images/Edificios.png);
+    background-size: cover;
+    animation: edificios 5s infinite linear; 
+}
+
+@keyframes edificios {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: -1500px center;
+    }
+}
+
+.contenedor-1 .entrega h4{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: "titulo";
+    font-size: 70px;
+}
+
+.cont-carrito .contenedor-2{
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #797978;
+}
+
+.carrito{
+    position: relative;
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+    margin: -12% auto 0 auto;
+}
+
+.carrito img{
+    width: 100%;
+    margin-top: 0;
+    animation: carrito .5s infinite linear;
+}
+
+@keyframes  carrito{
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.carrito .llanta1{
+    position: absolute;
+    right: 14%;
+    bottom: -15px;
+    width: 10%;
+    height: 18%;
+    background: #dddcdc;
+    border-radius: 50px;
+    border: 10px solid #000;
+    transform-origin: center;
+    animation: llanta .5s infinite linear;
+}
+
+.carrito .llanta2{
+    position: absolute;
+    left: 15%;
+    bottom: -15px;
+    width: 10%;
+    height: 18%;
+    background: #dddcdc;
+    border-radius: 50px;
+    border: 10px solid #000;
+    animation: llanta .5s infinite linear;
+}
+
+@keyframes  llanta{
+    0% {
+        transform:rotate(0deg);
+        bottom: -15px;
+    }
+    50% {
+        bottom: -20px;
+    }
+    100% {
+        transform:rotate(360deg);
+        bottom: -15px;
+    }
+}
+/* ======== FIN DE ANIMACION ========= */
+
+
+/* ==========================================================
+INICIO DE LA SECCION DE TAPITAS
+============================================================= */
+.fondtapitas{
+    width:  100%;
+    height: auto;
+    background: #031020;
+    padding: 100px 0;
+}
+
+.fondtapitas .bebidas{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.bebidas h2{
+    text-align: center;
+    font-family: "titulo";
+    font-size: 3rem;
+}
+
+.bebidas .titulo{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "normal";
+    border-bottom: 2px solid #eee;
+}
+
+.bebidas .refrescos{
+    width: 100%;
+}
+
+.refrescos .tapitas{
+    width: 100%;
+    height: auto;
+}
+
+.refrescos img{
+    width: 100%;
+    margin: auto;
+}
+
+.bebidas .todosproductos{
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid #eee;
+}
+
+.todosproductos .texto{
+    width: 100%;
+    padding: 0 20px;
+    text-align: justify;
+    font-family: "subtitle";
+    font-size: 1.1rem;
+}
+
+.todosproductos .boton{
+    width: 100%;
+    min-height: 65px;
+    text-align: center;
+    font-family: "subtitle";
+    font-size: 1.2rem;
+}
+
+.todosproductos .boton a{
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    background: #ee0707;
+    border-radius: 0px;
+    transition: all 1s ease-out;
+    animation: botonprodu 1.5s infinite linear;
+}
+
+.todosproductos .boton a:hover{
+    color: #fff;
+    background: #031020;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+INICIO MEDIA SCREEN LG
+================================ */
+
+@media screen and (max-width: 991px){
+
+    .header-video video{
+        margin-left: -35rem;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .header-content h1{
+        font-size: 90px;
+        color: #ffffff;
+        font-family: "titulo";
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .header-content p{
+        width:  60%;
+        margin: 50px auto 50px auto;
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+        font-family: "normal";
+    }
+    
+    .header-content .logo{
+        width: 100%;
+        display: flex;
+    }
+    
+    .header-content .logo img{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+}
+
+/* ===============================
+INICIO MEDIA SCREEN LG
+================================ */
+
+@media screen and (max-width: 767px){
+
+    .header-video video{
+        margin-left: -35rem;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .header-content h1{
+        font-size: 90px;
+        color: #ffffff;
+        font-family: "titulo";
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .header-content p{
+        width:  90%;
+        margin: 50px auto 50px auto;
+        color: #ffffff;
+        text-align: center;
+        font-size: 23px;
+        font-family: "normal";
+    }
+    
+    .header-content .logo{
+        width: 100%;
+        display: flex;
+    }
+    
+    .header-content .logo img{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    .cont-nav .nav-links{
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        width: 100%;
+        height: 350px;
+        background: rgba(3, 6, 8, 0.938);
+        transition: all .5s ease-out;
+        z-index: 99;
+    }
+
+    .cont-nav ul{
+        padding: 20px 0 0 0;
+    }
+
+    .cont-nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        color: #fff;
+        padding: 15px 15px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    a.active,a:hover{
+        background: #02313a9b;
+        text-decoration: none;
+        color: rgb(0, 255, 242);
+        transition: .5s all ease-in;
+    }
+    
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .cont-lines{
+        position: relative;
+        top: 20px;
+        right: 10px;
+    }
+
+    i .line{
+        width: 30px;
+        height: 5px;
+        background: #fff;
+        margin: 5px;
+    }
+
+    .fiesta-imag img, .local-imag img{
+        width: 100%;
+        height: auto
+    }
+
+}
+
+
+/* ===============================
+INICIO MEDIA SCREEN SM
+================================ */
+
+@media screen and (max-width: 540px){
+
+    .header-content .logo img{
+        width: 200px;
+        margin: 80px auto 0 auto;
+    }
+
+    .fiesta-imag img, .local-imag img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
